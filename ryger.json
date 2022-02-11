@@ -1,159 +1,224 @@
 {
-   "monster":[
-      {
-         "name":"Ryger, the Remorseful",
-         "page":"0",
-         "size":"Huge",
-         "type":{
-            "type":"Undead",
-            "tags":[
-               "Dragon"
-            ]
-         },
-         "alignment":[
-            "U"
-         ],
-         "ac":[
-            {
-               "ac":18,
-               "from":[
-                  "Natural Armor"
-               ]
-            }
-         ],
-         "hp":{
-            "average":104,
-            "formula":"16d12"
-         },
-         "speed":{
-            "climb":"40"
-         },
-         "str":23,
-         "dex":12,
-         "con":23,
-         "int":18,
-         "wis":15,
-         "save":{
-            "dex":"+6",
-            "con":"+11",
-            "wis":"+7",
-            "charisma":"+10"
-         },
-         "skill":{
-            "deception":"+10",
-            "perception":"+7",
-            "stealth":"+6"
-         },
-         "senses":[
-            "blindsight 60 ft.",
-            "darkvision 120 ft."
-         ],
-         "passive":10,
-         "immune":[
-            "Acid",
-            "Necrotic",
-            "Poison"
-         ],
-         "conditionImmune":[
-            "Poisoned",
-            "Paralyzed",
-            "Charmed"
-         ],
-         "languages":[
-            "Common",
-            "Draconic",
-            "Elvish",
-            "Celestial"
-         ],
-         "trait":[
-            {
-               "name":"Turn Immunity",
-               "entries":[
-                  "Ryger is immune to effects that turn undead."
-               ]
-            }
-         ],
-         "action":[
-            {
-               "name":"Multiattack",
-               "entries":[
-                  "Ryger can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
-               ]
-            },
-            {
-               "name":"Bite",
-               "entries":[
-                  "<i>Melee Weapon Attack:</i> +11 to hit, reach 10 ft., one target. <i>Hit:</i> 17 (2d10 + 6) piercing damage."
-               ]
-            },
-            {
-               "name":"Claw",
-               "entries":[
-                  "<i>Melee Weapon Attack:</i> +11 to hit, reach 5 ft., one target. <i>Hit:</i> 13 (2d6 + 6) slashing damage."
-               ]
-            },
-            {
-               "name":"Tail",
-               "entries":[
-                  "<i>Melee Weapon Attack:</i> +11 to hit, reach 15 ft., one target. <i>Hit:</i> 15 (2d8 + 6) bludgeoning damage."
-               ]
-            },
-            {
-               "name":"Frightful Presence",
-               "entries":[
-                  "Each creature of Ryger's choice that is within 120 feet of him and aware of him must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Ryger's Frightful Presence for the next 24 hours."
-               ]
-            },
-            {
-               "name":"Breath Weapon (Recharge 5–6)",
-               "entries":[
-                  "Ryger uses one of the following breath weapons.\n\n<b>Acid Breath.</b> Ryger exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, and is cursed by the wretched magic binding Ryger to his post. Whenever the cursed creature is damaged by a God or a creature bound to one, the Veil over their eyes is burnt away. They are under the effects of the <i>unveiled</i> condition.\n\nThis must be dispelled by a <i>remove curse</i> spell cast at 5th level within 24 hours, or the condition is permanent.\n\nOn a successful save, they take half damage and are not <i>unveiled</i>.\n\n<b>Slowing Breath.</b> Ryger exhales gas in a 60-foot cone. Each creature in that area must succeed on a DC 18 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save"
-               ]
-            }
-         ],
-         "reaction":[
-            {
-               "name":"Deadly Reach",
-               "entries":[
-                  "In response to a creature entering a space within 15 feet of him, Ryger makes one Bite or Tail attack against that creature."
-               ]
-            }
-         ],
-         "legendary":[
-            {
-               "name":"Detect",
-               "entries":[
-                  "Ryger makes a Wisdom (Perception) check."
-               ]
-            },
-            {
-               "name":"Tail Attack",
-               "entries":[
-                  "Ryger makes a tail attack."
-               ]
-            }
-         ],
-         "legendaryGroup":null,
-         "environment":[
-            
-         ],
-         "soundClip":null,
-         "traitTags":[
-            "Turn Immunity"
-         ],
-         "senseTags":null,
-         "actionTags":[
-            "Multiattack",
-            "Bite",
-            "Claw",
-            "Tail",
-            "Frightful Presence",
-            "Breath Weapon (Recharge 5–6)"
-         ],
-         "damageTags":null,
-         "miscTags":null,
-         "conditionInflict":null,
-         "conditionInflictLegendary":null
-      }
-   ]
+	"name": "Ryger the Remorseful",
+	"source": "VyrinMonsters",
+	"page": 1,
+	"size": "H",
+	"type": {
+		"type": "undead",
+		"tags": [
+			"Dragon"
+		]
+	},
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 18,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "16d12 + 96",
+		"average": 200
+	},
+	"speed": {
+		"walk": 40,
+		"climb": 40,
+		"swim": 80
+	},
+	"str": 23,
+	"dex": 12,
+	"con": 23,
+	"int": 18,
+	"wis": 15,
+	"cha": 21,
+	"save": {
+		"dex": "+6",
+		"con": "+11",
+		"wis": "+7",
+		"cha": "+10"
+	},
+	"skill": {
+		"deception": "+10",
+		"perception": "+12",
+		"stealth": "+6"
+	},
+	"senses": [
+		"blindsight 60 ft.",
+		"darkvision 120 ft."
+	],
+	"passive": 22,
+	"immune": [
+		"acid",
+		"necrotic",
+		"poison"
+	],
+	"languages": [
+		"Common",
+		"Draconic",
+		"Elvish",
+		"Celestial"
+	],
+	"cr": "14",
+	"trait": [
+		{
+			"name": "Legendary Resistance (3/Day)",
+			"entries": [
+				"If Ryger fails a saving throw, it can choose to succeed instead."
+			]
+		},
+		{
+			"name": "Turn Immunity",
+			"entries": [
+				"Ryger is immune to effects that turn undead."
+			]
+		},
+		{
+			"name": "Undead Fortitude",
+			"entries": [
+				"If damage reduces Ryger to 0 hit points, he must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, Ryger drops to 1 hit point instead."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Ryger can use his Frightful Presence. He then makes three attacks: one with his bite and two with his claws."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
+			]
+		},
+		{
+			"name": "Claw",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+			]
+		},
+		{
+			"name": "Tail",
+			"entries": [
+				"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Frightful Presence",
+			"entries": [
+				"Each creature of Ryger's choice that is within 120 feet of him and aware of him must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Ryger's Frightful Presence for the next 24 hours."
+			]
+		},
+		{
+			"name": "Breath Weapons {@recharge 5}",
+			"entries": [
+				"The dragon uses one of the following breath weapons.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Acid Breath",
+							"entry": "The dragon exhales acid in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 18} Dexterity saving throw, taking 54 ({@damage 12d8}) acid damage on a failed save, and is cursed by the wretched magic binding Ryger to his post. Whenever the cursed creature is damaged by a God or a creature bound to one, the Veil over their eyes is burnt away. They are under the effects of the unveiled condition. This must be dispelled by a {@spell remove curse} spell cast at 5th level within 24 hours, or the condition is permanent. On a successful save, they take half damage and are not unveiled"
+						},
+						{
+							"type": "item",
+							"name": "Slowing Breath",
+							"entry": "Ryger exhales gas in a 60-foot cone. Each creature in that area must succeed on a {@dc 18} Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save."
+						}
+					]
+				}
+			]
+		}
+	],
+	"traitTags": [
+		"Legendary Resistances",
+		"Turn Immunity",
+		"Undead Fortitude"
+	],
+	"senseTags": [
+		"B",
+		"SD"
+	],
+	"actionTags": [
+		"Breath Weapon",
+		"Frightful Presence",
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"DR",
+		"E",
+		"CE"
+	],
+	"damageTags": [
+		"P",
+		"S",
+		"B",
+		"A"
+	],
+	"miscTags": [
+		"MW",
+		"RCH",
+		"AOE"
+	],
+	"conditionInflict": [
+		"frightened"
+	],
+	"conditionInflictLegendary": [
+		"incapacitated"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"tokenUrl": "https://5e.tools/img/MM/Adult Copper Dragon.png",
+	"fluff": {
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://5e.tools/img/bestiary/MM/Copper Dragon.jpg"
+				}
+			}
+		]
+	},
+	"resist": [
+		"cold",
+		"lightning"
+	],
+	"conditionImmune": [
+		"charmed",
+		"paralyzed",
+		"poisoned"
+	],
+	"shortName": "Ryger",
+	"reaction": [
+		{
+			"name": "Deadly Reach",
+			"entries": [
+				"In response to a creature entering a space within 15 feet of him, Ryger makes one Bite or Tail attack against that creature."
+			]
+		}
+	],
+	"isNamedCreature": true,
+	"legendary": [
+		{
+			"name": "Detect",
+			"entries": [
+				"Ryger makes a Wisdom ({@skill Perception}) check."
+			]
+		},
+		{
+			"name": "Tail Attack",
+			"entries": [
+				"Ryger makes a Tail attack."
+			]
+		}
+	]
 }
